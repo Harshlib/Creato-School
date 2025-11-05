@@ -1,0 +1,34 @@
+/* Keep it inside your component folder ideally */
+
+.slider-section {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* makes it behave like a hero/banner section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.void-pulse {
+  position: absolute;
+  inset: 0; /* full cover background */
+  background: linear-gradient(to right, #083344, #134e4a, #155e75);
+  filter: url(#void-texture);
+  z-index: 0;
+}
+
+.slider-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.texture-filter {
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+}
